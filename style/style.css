@@ -15,11 +15,13 @@ body {
 h1 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 900 bolder;
+    font-size: 2rem;
 }
 
 p {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 500;
+    font-size: 1rem;
 }
 
 header {
@@ -48,8 +50,9 @@ z-index: 3;
     border-bottom-color: #fff;
   }
 
-  a {
+  a.nav-link{
       color: #333!important;
+      font-weight: bold;
   }
 
 
@@ -61,8 +64,6 @@ z-index: 3;
   left: 8%;
   margin-top: -50px;
   z-index: 3;
-
-
     
   }
 
@@ -73,8 +74,19 @@ z-index: 3;
   .btn-group-lg>.btn, .btn-lg {
       padding: .5rem 3rem;
       border-radius: .2em!important;
+      margin-bottom: 5%;
+  }
+  .btn-outline-primary {
+    color: #343a40!important;
+    border-color: #F4C136!important;
+    background: #F4C136!important;
   }
 
+  .btn-outline-primary:hover {
+    color: #343a40!important;
+    border-color: #F4C136!important;
+    background: #F4C136!important;
+  }
   .img1 {
     position: absolute;
     right: 500px;
@@ -106,4 +118,123 @@ z-index: 3;
 
   .social-icons {
       z-index: 3;
+  }
+
+  @media (min-width: 768px) and (max-width: 979px) {
+    /* Tablet */
+    .header-Agency {
+    text-align: center;
+    /* margin-right: 0%; */
+    position: fixed;
+    top: 45%;
+    left: 8%;
+    /* margin-top: 0px; */
+    z-index: 3;
+    margin: 0 auto;
+  }
+
+  .img1 {
+    position: absolute;
+    right: 500px;
+    bottom: 450px;
+    z-index: 1;
+  }
+
+  .img2 {
+    position: absolute;
+    right: 0px;
+    bottom: 450px;
+    z-index: 1;
+  }
+
+  .img3 {
+    position: absolute;
+    right: 400px;
+    bottom: 0px;
+    z-index: 1;
+  }
+
+
+  .img4 {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    z-index: 1;
+  }
+
+  }
+
+  @media (min-width: 481px) and (max-width: 767px) { 
+    /* Big phones */
+    .header-Agency {
+      text-align: center;
+      margin: 5%;
+      position: fixed;
+      top: 35%;
+      left: 0%;
+      margin-top: 0px;
+      z-index: 3;
+      
+    }
+    .img1 {
+      visibility: hidden;
+    }
+  
+    .img2 {
+      position: absolute;
+      right: 0px;
+      bottom: 0px;
+      z-index: 1;
+      width: 20!important;
+    }
+  
+    .img3 {
+      position: absolute;
+      right: 400px;
+      bottom: 0px;
+      z-index: 1;
+    }
+  
+  
+    .img4 {
+      visibility: hidden;
+    }
+  }
+
+  @media (max-width: 480px) {
+    /* Small Phones */
+    .header-Agency {
+      text-align: center;
+      margin: 5%;
+      position: fixed;
+      top: 30%;
+      left: 0%;
+      margin-top: 0px;
+      z-index: 3;
+      
+    }
+
+    .img1 {
+      visibility: hidden;
+    }
+  
+    .img2 {
+      position: absolute;
+      right: 0px;
+      bottom: 0px;
+      z-index: 1;
+
+    }
+  
+    .img3 {
+      position: absolute;
+      right: 400px;
+      bottom: 0px;
+      z-index: 1;
+    }
+  
+  
+    .img4 {
+      visibility: hidden;
+    }
   }

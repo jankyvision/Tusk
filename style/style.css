@@ -138,6 +138,7 @@ z-index: 3;
     right: 500px;
     bottom: 450px;
     z-index: 1;
+  
   }
 
   .img2 {
@@ -145,6 +146,7 @@ z-index: 3;
     right: 0px;
     bottom: 450px;
     z-index: 1;
+    
   }
 
   .img3 {
@@ -152,6 +154,7 @@ z-index: 3;
     right: 400px;
     bottom: 0px;
     z-index: 1;
+    
   }
 
 
@@ -160,6 +163,7 @@ z-index: 3;
     right: 0px;
     bottom: 0px;
     z-index: 1;
+
   }
 
   }
@@ -181,18 +185,11 @@ z-index: 3;
     }
   
     .img2 {
-      position: absolute;
-      right: 0px;
-      bottom: 0px;
-      z-index: 1;
-      width: 20!important;
+      visibility: hidden;
     }
   
     .img3 {
-      position: absolute;
-      right: 400px;
-      bottom: 0px;
-      z-index: 1;
+      visibility: hidden;
     }
   
   
@@ -219,18 +216,12 @@ z-index: 3;
     }
   
     .img2 {
-      position: absolute;
-      right: 0px;
-      bottom: 0px;
-      z-index: 1;
+      visibility: hidden;
 
     }
   
     .img3 {
-      position: absolute;
-      right: 400px;
-      bottom: 0px;
-      z-index: 1;
+      visibility: hidden;
     }
   
   

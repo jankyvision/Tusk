@@ -27,6 +27,29 @@ p {
 header {
 z-index: 3;
 }
+
+#menu {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 70;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  letter-spacing: 1px;
+  font-size: 1.1em;
+}
+
+#social {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 70;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  letter-spacing: 1px;
+  font-size: 1.1em;
+}
+
 .nav-masthead .nav-link {
     padding: .25rem 0;
     font-weight: 700;

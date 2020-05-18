@@ -143,6 +143,11 @@ padding-left: 10%;
 padding-right: 10%;
 }
 
+#header1 {
+  float: left;
+  padding-left: 20;
+}
+
 .about-us {
   padding-left: 10%;
 padding-right: 10%;

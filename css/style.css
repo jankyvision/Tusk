@@ -16,7 +16,7 @@ a.nav-link:hover{
 }
 
 .navbar-nav {
-    background-color: #f2f3f791;
+    background-color: #ffffffc5;
 
 }
 
@@ -49,9 +49,9 @@ p {
 
 
 .section4 {
-  background: -webkit-gradient(linear, top left, bottom left, from(#6f3ae9), to(#00b3ff));
-  background: -webkit-linear-gradient(#6f3ae9, #00b3ff);
-  background: linear-gradient(#6f3ae9,#00b3ff);
+  background: -webkit-gradient(linear, top left, bottom left, from(#DC456E), to(#A332C4));
+  background: -webkit-linear-gradient(#DC456E, #A332C4);
+  background: linear-gradient(#DC456E,#A332C4);
 }
 
 #contact-form-header {
@@ -62,6 +62,10 @@ form {
   padding-left: 10%;
   padding-right: 10%;
   padding-bottom: 10%;
+}
+
+.form-group {
+  margin-bottom: .2rem!important;
 }
 
 .btn-primary {

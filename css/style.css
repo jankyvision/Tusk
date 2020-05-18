@@ -16,22 +16,14 @@ a.nav-link:hover{
 }
 
 .navbar-nav {
-    background-color: #ffffffc5;
+    background-color: #ffffffef;
 
 }
 
 .navbar-light .navbar-toggler {
     border-color: rgba(255, 255, 255, 0)!important;
 }
-.nav > li.dropdown.open {
-  position: static;
-}
-.nav > li.dropdown.open .dropdown-menu {
-  display:table; width: 100%; text-align: center; left:0; right:0;
-}
-.dropdown-menu>li {
-  display: table-cell;
-}
+
 
 .section h1 {
     font-family: 'Open Sans', sans-serif;

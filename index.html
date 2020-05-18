@@ -199,45 +199,46 @@
             <div class="container">
           
               <h1 id="contact-form-header">Lets do something awesome together!!</h1>
-                <form>
+                <form action="https://formspree.io/xyynkjyd" method="POST">
   
                   <div class="form-row">
                     <div class="form-group col-md-6">
                       <label for="inputName">Name</label>
-                      <input type="name" class="form-control" id="name1"placeholder="First and Last Name">
+                      <input name="name" type="name" class="form-control" id="name1"placeholder="First and Last Name">
                     </div>
                     <div class="form-group col-md-6">
                       <label for="inputemail">Email</label>
-                      <input type="email" class="form-control" id="inputemail4" placeholder="name@example.com">
+                      <input name="_replyto" type="email" class="form-control" id="inputemail4" placeholder="name@example.com">
                     </div>
                   </div>
                   
                   <div class="form-row">
                     <div class="form-group col-md-6">
                       <label for="inputState">Subject</label>
-                      <select id="inputState" class="form-control">
-                        <option selected>UX/UI</option>
-                        <option selected>Website development</option>
-                        <option selected>Branding</option>
-                        <option>Marketing</option>
-                        <option selected>Other</option>
+                      <select name="subject" id="inputState" class="form-control">
+                        <option name="ux/ui" selected>UX/UI</option>
+                        <option name="Website development">Website development</option>
+                        <option name="Branding">Branding</option>
+                        <option name="Marketing">Marketing</option>
+                        <option name="Drone">Drone</option>
+                        <option name="ux/ui">Other</option>
                       </select>
                     </div>
                     <div class="form-group col-md-6">
                       <label for="inputState">Budget</label>
-                      <select id="inputState" class="form-control">
-                        <option selected>5-10k</option>
-                        <option selected>10-25k</option>
-                        <option selected>25-50k</option>
-                        <option selected>50-100k</option>
-                        <option selected>Other</option>
+                      <select name="budget" id="inputState" class="form-control">
+                        <option name="5-10k" selected>5-10k</option>
+                        <option name="10-25k">10-25k</option>
+                        <option name="25-50k">25-50k</option>
+                        <option name="50-100k">50-100k</option>
+                    
                       </select>
                     </div>
                   
                   </div>
                   <div class="form-group">
                     <label for="exampleFormControlTextarea1">Example textarea</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Let us know any other details. You would like us to know about your project!"></textarea>
+                    <textarea name="message" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Let us know any other details. You would like us to know about your project!"></textarea>
                   </div>
                   <button type="submit" class="btn btn-primary" id="form-button">Submit</button>
                 </form>

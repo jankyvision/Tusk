@@ -26,25 +26,35 @@
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:site" content="@tuskdesigns" />
 
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="style/grid.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/grid.css">
 </head>
 <body>
-    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-    <header class="masthead mb-auto">
+  <div id="header">
+      <header class="masthead mb-auto" id="menu">
         <nav class="navbar navbar-light">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="index.html">
               <img src="web-assets/logo-tusk.png" width="100" height="100" alt="" loading="lazy">
             </a>
-        
-            <ul class="nav justify-content-end">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="nav justify-content-end navbar-nav mr-auto">
                 <li class="nav-item">
                   <a class="nav-link active" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="projects.html">Projects</a>
                 </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#secondPage">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#fourthPage">Contact</a>
+                </li>
               </ul>
+           </div>
           </nav>
         </header>
 

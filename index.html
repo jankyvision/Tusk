@@ -47,7 +47,68 @@
 	}
 	#footer{
 		bottom:0px;
+  }
+  
+  #myVideo{
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		top:0;
+		right:0;
+		width: 100%;
+		height: 100%;
+		background-size: 100% 100%;
+ 		background-color: black; /* in case the video doesn't fit the whole page*/
+  		background-image: /* our video */;
+  		background-position: center center;
+  		background-size: contain;
+   		object-fit: cover; /*cover video background */
+       z-index:3;
+       
+  }
+
+  .gradient {
+  background-image: radial-gradient( circle at 36% 48%, #f2f3f791, rgba(11, 39, 65, 0.32) 87%, rgba(0, 0, 0, 0.0));
+  width: 100%;
+  height: 100vh;
+  min-height: 600px;
+  object-fit: cover;
+  position: relative;
+  z-index: 4;
+}
+
+  
+  /* Layer with position absolute in order to have it over the video
+	* --------------------------------------- */
+	#section2 .layer{
+		position: absolute;
+		z-index: 4;
+		width: 100%;
+		left: 0;
+    top: 43%;
+
+		/*
+		* Preventing flicker on some browsers
+		* See http://stackoverflow.com/a/36671466/1081396  or issue #183
+		*/
+		-webkit-transform: translate3d(0,0,0);
+		-ms-transform: translate3d(0,0,0);
+		transform: translate3d(0,0,0);
+  }
+  
+  /*solves problem with overflowing video in Mac with Chrome */
+	#section2{
+    overflow: hidden;
+     
+  }
+
+  /* Hiding video controls
+	* See: https://css-tricks.com/custom-controls-in-html5-video-full-screen/
+	* --------------------------------------- */
+	video::-webkit-media-controls {
+	  display:none !important;
 	}
+
 
     </style>
 </head>
@@ -113,8 +174,15 @@
           <img id="img4" src="web-assets/business-card.png" width="200" alt="" loading="lazy">
           </div>
         </div>
-        <div class="section section2">
-            <div class="container">
+        <div class="section section2" id="section2"> 
+          <div class="gradient">
+          </div>
+          <video id="myVideo" loop muted data-autoplay>
+            <source src="imgs/bali.m4v" type="video/mp4">
+              <!-- <source src="imgs/flowers.webm" type="video/webm"> -->
+          </video>
+   
+            <div class="container layer">
               <div class="about-us">
                 <h1>We Love Making Things.</h1>
                 <p>Tusk Designs is a worldclass development company. We are a Long Beach digital agency focused on scaling business's digital presence to enable them to reach there full online potential.  </p>
@@ -205,7 +273,7 @@
       // sectionsColor: ['#fff', '#1BBC9B', '#7E8F7C'],
       navigation: true,
       navigationPosition: 'right',
-      navigationTooltips: ['Home', 'About Us', 'Projects', 'Contact Us']
+      navigationTooltips: ['Home', 'About Us', 'Contact Us']
   });
 </script>
 </body>

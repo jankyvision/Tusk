@@ -49,7 +49,9 @@ p {
 
 
 .section4 {
-    background: #3191ff;
+  background: -webkit-gradient(linear, top left, bottom left, from(#6f3ae9), to(#00b3ff));
+  background: -webkit-linear-gradient(#6f3ae9, #00b3ff);
+  background: linear-gradient(#6f3ae9,#00b3ff);
 }
 
 #contact-form-header {
@@ -138,6 +140,11 @@ form {
     z-index: 3;
 
 padding-left: 10%;
+padding-right: 10%;
+}
+
+.about-us {
+  padding-left: 10%;
 padding-right: 10%;
 }
 

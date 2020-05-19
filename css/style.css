@@ -203,10 +203,7 @@ padding-right: 10%;
           }
         
           .img2 {
-            position: absolute;
-        right: 0px;
-        bottom: 0px;
-        z-index: 1;
+            visibility: hidden;
           }
         
           .img3 {
@@ -215,7 +212,10 @@ padding-right: 10%;
         
         
           .img4 {
-            visibility: hidden;
+            position: absolute;
+            right: 0px;
+            bottom: 0px;
+            z-index: 1;
           }
         }
 
@@ -227,10 +227,7 @@ padding-right: 10%;
               }
             
               .img2 {
-                position: absolute;
-                right: 0px;
-                bottom: 0px;
-                z-index: 1;
+                visibility: hidden;
           
               }
             
@@ -240,6 +237,9 @@ padding-right: 10%;
             
             
               .img4 {
-                visibility: hidden;
+                position: absolute;
+            right: 0px;
+            bottom: 0px;
+            z-index: 1;
               }
             }
